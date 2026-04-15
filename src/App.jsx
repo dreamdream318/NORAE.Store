@@ -1,12 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
-
-ReactDOM.createRoot(document.getElementById("root")).render(
-<React.StrictMode>
-<App />
-</React.StrictMode>
-);
 import React, { useState } from "react"; import { motion } from "framer-motion"; import { ShoppingCart, Heart, User, X } from "lucide-react";
 
 export default function NoraeStore() { const [cart, setCart] = useState([]); const [wishlist, setWishlist] = useState([]); const [showCart, setShowCart] = useState(false); const [showCheckout, setShowCheckout] = useState(false); const [showLogin, setShowLogin] = useState(false); const [user, setUser] = useState(null);
